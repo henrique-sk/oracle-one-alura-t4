@@ -1,2 +1,2 @@
 # oracle-one-alura-t4
- Material desenvolvido durante as aulas da formação Oracle ONE, parceria com a Alura, Turma 4.
+ Content developed during the Oracle ONE training classes, partnership with Alura, Class 4.
