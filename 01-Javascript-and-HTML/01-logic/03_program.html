@@ -6,10 +6,24 @@
 
   document.write("Henrique is " + (ano - 1985) + " years old.");
   document.write("<br>");
-  document.write("Henrique is " + (ano - 1996) + " years old.");
+  document.write("Joaquim is " + (ano - 1996) + " years old.");
   document.write("<br>");
-  document.write("Henrique is " + (ano - 1976) + " years old.");
-  document.write("<p>");  
-  document.write("The sum of the ages is " + (20 + 10 + 30) + ".");
+
+  ano = 2020;
+  document.write("Barney is " + (ano - 1976) + " years old.");
+  
+  var ageHenrique = 37;
+  var ageJoaquim = 26;
+  var ageBarney = 44;
+
+  var average = (ageHenrique + ageJoaquim + ageBarney)/3;
+
+  document.write("<p>");
+  document.write("The average age is " + Math.round(average) + " years.");
+   
+  var name = "Henrique";
+
+  document.write("<p>");
+  document.write(name + " is " + ageHenrique + " years old.");
 
 </script>
