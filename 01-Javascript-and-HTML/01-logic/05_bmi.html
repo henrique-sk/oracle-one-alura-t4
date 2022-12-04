@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+  function skipLine() {
+    document.write("<br>");
+  }
+
+  function paragraph() {
+    document.write("<p>");
+  }
+
+  function show(string) {
+    document.write(string);
+    skipLine();
+  }
+
+  function calculatesBmi(weight, height) {
+    return Math.round(weight / (height * height));
+  }
+
+  var name = prompt("Enter your name.");
+  var height = prompt(name + ", enter your height.");
+  var weight = prompt(name + ", enter your weight.");
+  var bmi = calculatesBmi(weight, height);
+
+  document.write(name + ", your BMI is " + (bmi) + ".");
+
+</script>
