@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+  function skipLine() {
+    document.write("<br>");
+  }
+
+  function paragraph() {
+    document.write("<p>");
+  }
+
+  function show(string) {
+    document.write(string);
+    skipLine();
+  }
+
+  var ano = 2022;
+
+  show("Henrique is " + (ano - 1985) + " years old.");
+  show("Joaquim is " + (ano - 1996) + " years old.");
+
+  ano = 2020;
+  paragraph();
+  show("Barney is " + (ano - 1976) + " years old.");
+
+</script>
