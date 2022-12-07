@@ -24,6 +24,14 @@
   var weight = prompt(name + ", enter your weight.");
   var bmi = calculatesBmi(weight, height);
 
-  document.write(name + ", your BMI is " + (bmi) + ".");
+  show(name + ", your BMI is " + (bmi) + ".");
+
+  if (bmi < 18.5) {
+    show("Your BMI is below recommended.");
+  } else if (bmi > 35) {
+    show("Your BMI is above recommended.");
+  } else if (18.5 <= bmi <= 35) {
+    show ("Seu imc está excelente!");
+  }  
 
 </script>
