@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+  function skipLine() {
+    document.write("<br>");
+  }
+
+  function paragraph() {
+    document.write("<p>");
+  }
+
+  function show(string) {
+    document.write(string);
+    skipLine();
+  }
+
+  var relativesQuantity = parseInt(prompt("How many family members?"));
+
+  var num = 1;
+  var totalAge = 0;
+  while(num <= relativesQuantity) {
+    var age = parseInt(prompt("Enter the family member's age."));
+    totalAge += age;
+    num++;
+  }
+
+  var averageAges = totalAge/relativesQuantity;
+  show("The average age of family members is " + averageAges + ".");
+  show("END");
+
+</script>
