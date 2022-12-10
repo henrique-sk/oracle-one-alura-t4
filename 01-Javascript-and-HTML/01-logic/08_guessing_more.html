@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<input/>
+<button onclick="verify()">Compare to my secret</button>
+
+<script>
+
+  var secret = Math.round(Math.random() * 10);
+
+  var input = document.querySelector("input");
+  input.focus();
+
+  function verify() {
+
+    if(input.value == secret) {
+
+      alert("CONGRATS! You guessed write!");
+    } else {
+
+      alert("You are wrong!!!!");
+    }
+
+    input.value = "";
+    input.focus();
+
+  }
+
+</script>
