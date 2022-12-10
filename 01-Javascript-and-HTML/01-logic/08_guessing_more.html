@@ -1,28 +1,71 @@
 <meta charset="UTF-8">
 
 <input/>
-<button onclick="verify()">Compare to my secret</button>
+<button onclick="verify()">Compare to my secrets</button>
 
 <script>
 
-  var secret = Math.round(Math.random() * 10);
+  function draws(length=10) {
+    return Math.round(Math.random() * length);
+  }
+
+  function drawsNumbers(quantity) {
+
+    var secrets = [];
+
+    var number = 1;
+    while(number <= quantity) {
+      var randomNumber = draws();
+
+      if(randomNumber !== 0) {
+        var found = false;
+  
+        for(var position = 0; position < secrets.length; position++) {
+  
+          if(secrets[position] == randomNumber) {
+            found = true;
+            break;
+          }      
+        }
+  
+        if(!found) {
+          secrets.push(randomNumber);
+          number++;
+        }
+      }
+    }
+
+    return secrets;
+  }
+
+  var secrets = drawsNumbers(5);
+
+  console.log(secrets);
 
   var input = document.querySelector("input");
   input.focus();
 
   function verify() {
 
-    if(input.value == secret) {
+    var found = false;
 
-      alert("CONGRATS! You guessed write!");
-    } else {
+    for(var position = 0; position < secrets.length; position++) {
 
-      alert("You are wrong!!!!");
+      if(input.value == secrets[position]) {
+  
+        alert("CONGRATS! You guessed write!");
+        found = true;
+        break;
+      }      
+    }
+
+    if(!found) {
+      alert("You are wrong!")
     }
 
     input.value = "";
     input.focus();
 
-  }
+    }
 
 </script>
