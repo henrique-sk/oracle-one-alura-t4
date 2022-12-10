@@ -20,17 +20,29 @@
   }
 
   var expectedNumber = drawing(10);
-  var guess = parseInt(prompt("Type your guess!"));
+  
+  var tries = 1;
 
-  if (guess == expectedNumber) {
-    show("Congrats!! You guessed right! The expected number was " + expectedNumber + ".");
-  } else {
-    show("You are wrong!");
-    if (guess > expectedNumber) {
-      show("Your guess was higher than the expected number!");
+  while(tries <= 3) {
+
+    var guess = parseInt(prompt("Type your guess!"));
+
+    if (guess == expectedNumber) {
+      show("CONGRATS!! You guessed right! The expected number was " + expectedNumber + ".");
+      break;
+
     } else {
-      show("Your guess was lower than the expected number!");
+      show("You are wrong!");
+      if (guess > expectedNumber) {
+        show("Your guess was higher than the expected number!");
+      } else {
+        show("Your guess was lower than the expected number!");
+      }
     }
+    
+    tries++;
   }
+
+  show("END")
 
 </script>
