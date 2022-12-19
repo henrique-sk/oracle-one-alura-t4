@@ -1,0 +1,44 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+   function drawsSquare(x, y, width, height, color) {    
+    var display = document.querySelector('canvas');
+    var brush = display.getContext('2d');
+  
+    brush.fillStyle = color;
+    brush.fillRect(x, y, width, height);
+    brush.strokeStyle = 'black';
+    brush.strokeRect(x, y, width, height);  
+  }
+
+  function drawsText(x, y, text) {
+    var display = document.querySelector('canvas');
+    var brush = display.getContext('2d');
+
+    brush.font = '15px Georgia';
+    brush.fillStyle = 'black';
+    brush.fillText(text, x, y);
+  }
+
+  function drawsBar(x, y, series, colors, text) {
+
+    drawsText(x, y - 10, text);
+
+    var sumHeight = 0;
+        for (var i = 0; i < series.length; i++) {
+            var height = series[i];
+            drawsSquare(x, y + sumHeight, 50, height, colors[i]);
+            sumHeight = sumHeight + height;
+        }
+  }
+
+  var series2015 = [50, 25, 20, 5];
+  var series2016 = [65, 20, 13, 2];
+
+  var colors = ['blue', 'green', 'yellow', 'red'];
+
+  drawsBar(50, 50, series2015, colors, '2015');
+  drawsBar(150, 50, series2016, colors, '2016');
+
+</script>
