@@ -1,0 +1,45 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+  var display = document.querySelector('canvas');
+  var brush = display.getContext('2d');
+  brush.fillStyle = 'lightgray';
+  brush.fillRect(0, 0, 600, 400);
+
+  function drawsSquare(x, y, color) {    
+  
+    brush.fillStyle = color;
+    brush.fillRect(x, y, 50, 50);
+    brush.fillStroke = color;
+    brush.strokeRect(x, y, 50, 50);  
+  }
+
+  function drawsCircle(x, y, radius, color) {
+
+    
+
+    brush.fillStyle = color;
+    brush.beginPath();
+    brush.arc(x, y, radius, 0, 2 * 3.14);
+    brush.fill();
+  }
+
+  function drawsFlower(x, y) {
+
+    drawsCircle(x, y+20, 10, 'blue');
+    drawsCircle(x, y, 10, 'red');
+    drawsCircle(x, y-20, 10, 'yellow');
+    drawsCircle(x-20, y, 10, 'orange');
+    drawsCircle(x+20, y, 10, 'black');
+  }
+
+  var x = 0;
+  while(x < 600) {
+    drawsSquare(x, 0, 'green');
+    x = x + 50;
+  }
+
+  drawsFlower(300, 200);
+
+</script>
