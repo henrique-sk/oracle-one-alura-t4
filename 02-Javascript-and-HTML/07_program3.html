@@ -1,35 +1,61 @@
-<canvas width="600" height="4000"></canvas>
+<canvas width="600" height="400"></canvas>
+<br>
+Select a color <input type="color">
 
 <script>
+  var palette = document.querySelector('input');
   var display = document.querySelector('canvas');
   var brush = display.getContext('2d');
   brush.fillStyle = 'grey';
   brush.fillRect(0, 0, 600, 400);
-  var colors = ['blue', 'red', 'green']
+  // var colors = ['blue', 'red', 'green'];
   var currentColorIndex = 0;
-
-  function drawsCircle(event) {
+  var radius = 10;
+  var draws = false;
+  
+  function configCircle() {
     var x = event.pageX - display.offsetLeft;
     var y = event.pageY - display.offsetTop;
-    var radius = 10
-    if (event.shiftKey) {
-      radius += 20;
-    }
-    brush.fillStyle = colors[currentColorIndex];
+    // brush.fillStyle = colors[currentColorIndex];
+    brush.fillStyle = palette.value;
     brush.beginPath();
     brush.arc(x, y, radius, 0, 2 * 3.14);
     brush.fill();
+  }
+
+  function drawsCircle(event) {
+    if(draws) {      
+      configCircle();
+    }
     console.log(x + ',' + y);
   }
 
-  function changeColor(test) {
-    currentColorIndex++;
-    if (currentColorIndex >= colors.length) {
-      currentColorIndex = 0;
-    }    
+  function changeSize(event) {
+    if (event.shiftKey && event.altKey) {
+      alert('Só aperte uma tecla por vez, por favor!');
+    } else if (event.shiftKey && radius <=30) {
+      radius += 10;
+    } else if (event.altKey && radius >= 6) {
+      radius -= 5;
+    }
+    configCircle();
   }
 
-  display.onclick = drawsCircle;
-  display.oncontextmenu = changeColor;
+  // function changeColor() {
+  //   currentColorIndex++;
+  //   if (currentColorIndex >= colors.length) {
+  //     currentColorIndex = 0;
+  //   }    
+  // }
+
+  display.onmousemove = drawsCircle;
+  // display.oncontextmenu = changeColor;
+  display.onclick = changeSize;
+  display.onmousedown = function() {
+    draws = true;
+  }
+  display.onmouseup = function() {
+    draws = false;
+  }
 
 </script>
