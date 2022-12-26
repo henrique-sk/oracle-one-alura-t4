@@ -1,0 +1,87 @@
+<meta charset="UTF-8" />
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+  function drawsSquare(x, y, size, color) {
+    pincel.fillStyle = color;
+    pincel.fillRect(x, y, size, size);
+    pincel.fill();
+  }
+
+  function drawsCircle(x, y, radius, color) {
+    pincel.fillStyle = color;
+    pincel.beginPath();
+    pincel.arc(x, y, radius, 0, 2 * 3.14);
+    pincel.fill();
+  }
+
+  function drawsColorPalette() {
+    drawsSquare(xRed, ySquares, sizeSquares, "red");
+    drawsSquare(xGreen, ySquares, sizeSquares, "green");
+    drawsSquare(xBlue, ySquares, sizeSquares, "blue");
+  }
+
+  function handlesMouseMovement(event) {
+    var x = event.pageX - display.offsetLeft;
+    var y = event.pageY - display.offsetTop;
+
+    if (draws && canDrawInTheArea(x, y)) {
+      drawsCircle(x, y, 5, currentColor);
+    }
+  }
+
+  function enableDraws() {
+    draws = true;
+  }
+
+  function disableDraws() {
+    draws = false;
+  }
+
+  function canDrawInTheArea(x, y) {
+    if (x >= 0 && x < 3 * sizeSquares && y >= 0 && y < sizeSquares) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  function selectColor(event) {
+    var x = event.pageX - display.offsetLeft;
+    var y = event.pageY - display.offsetTop;
+
+    if (y > ySquares && y < ySquares + sizeSquares) {
+      if (x > xRed && x < xRed + sizeSquares) {
+        currentColor = "red";
+      } else if (x > xGreen && x < xGreen + sizeSquares) {
+        currentColor = "green";
+      } else if (x > xBlue && x < xBlue + sizeSquares) {
+        currentColor = "blue";
+      }
+    }
+  }
+
+  var display = document.querySelector("canvas");
+  var pincel = display.getContext("2d");
+  pincel.fillStyle = "lightgray";
+  pincel.fillRect(0, 0, 600, 400);
+
+  var draws = false;
+  var currentColor = "blue";
+  var xRed = 0;
+  var xGreen = 50;
+  var xBlue = 100;
+  var ySquares = 0;
+  var sizeSquares = 50;
+
+  drawsColorPalette();
+
+  display.onmousemove = handlesMouseMovement;
+
+  display.onmousedown = enableDraws;
+
+  display.onmouseup = disableDraws;
+
+  display.onclick = selectColor;
+</script>
