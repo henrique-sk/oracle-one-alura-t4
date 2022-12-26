@@ -40,23 +40,22 @@
     yRandom = randomPosition(yAxis);
     drawsTarget(xRandom, yRandom);
   }
-
-  clearDisplay();
-  setInterval(refreshDisplay, 2000);
-
+  
   function shoots(event) {
     var x = event.pageX - display.offsetLeft;
     var y = event.pageY - display.offsetTop;
     
     if( (x > xRandom - radius)
-        && (x < xRandom + radius)
-        && (y > yRandom - radius)
-        && (y < yRandom + radius)) {
+    && (x < xRandom + radius)
+    && (y > yRandom - radius)
+    && (y < yRandom + radius)) {
       
       alert('Hit!');
     }
   }
-
+  
+  clearDisplay();
+  setInterval(refreshDisplay, 2000);
   display.onclick = shoots;
 
 </script>
