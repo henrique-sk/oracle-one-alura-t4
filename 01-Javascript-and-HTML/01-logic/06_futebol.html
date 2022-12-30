@@ -1,7 +1,11 @@
-<meta charset="UTF-8">
+<header>
+  <a href="javascript-and-HTML.html">< Back</a>
+  <a href="../index.html">Home</a>
+</header>
+
+<meta charset="UTF-8" />
 
 <script>
-
   function skipLine() {
     document.write("<br>");
   }
@@ -15,18 +19,20 @@
     skipLine();
   }
 
+  var lastYear = parseInt(prompt("Enter last year's points."));
+
   var victories = parseInt(prompt("Enter the sum of victories."));
+
   var draws = parseInt(prompt("Enter the sum of draws."));
 
-  var points = (victories * 3) + draws;
+  var points = victories * 3 + draws;
 
-  if (points > 28) {
+  if (points > lastYear) {
     show("Your team is better than last year.");
-  } else if (points < 28) {
-    show("Your team is worse than last year.");  
-  } else if (points == 28) {
+  } else if (points < lastYear) {
+    show("Your team is worse than last year.");
+  } else if (points == lastYear) {
     show("Your team is the same as last year.");
-  } 
+  }
   show("The end.");
-
 </script>

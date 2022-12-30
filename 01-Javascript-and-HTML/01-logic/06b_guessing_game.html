@@ -1,7 +1,11 @@
-<meta charset="UTF-8">
+<header>
+  <a href="javascript-and-HTML.html">< Back</a>
+  <a href="../index.html">Home</a>
+</header>
+
+<meta charset="UTF-8" />
 
 <script>
-
   function skipLine() {
     document.write("<br>");
   }
@@ -20,29 +24,31 @@
   }
 
   var expectedNumber = drawing(10);
-  
+
   var tries = 1;
 
-  while(tries <= 3) {
-
+  alert("Guess the number between 0 and 10.");
+  while (tries <= 3) {
     var guess = parseInt(prompt("Type your guess!"));
 
     if (guess == expectedNumber) {
-      show("CONGRATS!! You guessed right! The expected number was " + expectedNumber + ".");
+      show(
+        "CONGRATS!! You guessed right! The expected number was " +
+          expectedNumber +
+          "."
+      );
       break;
-
     } else {
-      show("You are wrong!");
+      var wrong = "You are wrong!";
       if (guess > expectedNumber) {
-        show("Your guess was higher than the expected number!");
+        alert(wrong + " Your guess was higher than the expected number!");
       } else {
-        show("Your guess was lower than the expected number!");
+        alert(wrong + "Your guess was lower than the expected number!");
       }
     }
-    
+
     tries++;
   }
 
-  show("END")
-
+  show("END");
 </script>

@@ -1,7 +1,11 @@
-<meta charset="UTF-8">
+<header>
+  <a href="javascript-and-HTML.html">< Back</a>
+  <a href="../index.html">Home</a>
+</header>
+
+<meta charset="UTF-8" />
 
 <script>
-
   function skipLine() {
     document.write("<br>");
   }
@@ -24,14 +28,13 @@
   var weight = prompt(name + ", enter your weight.");
   var bmi = calculatesBmi(weight, height);
 
-  show(name + ", your BMI is " + (bmi) + ".");
+  show(name + ", your BMI is " + bmi + ".");
 
   if (bmi < 18.5) {
     show("Your BMI is below recommended.");
   } else if (bmi > 35) {
     show("Your BMI is above recommended.");
   } else if (18.5 <= bmi <= 35) {
-    show ("Seu imc está excelente!");
-  }  
-
+    show("Your BMI is excellent!");
+  }
 </script>
