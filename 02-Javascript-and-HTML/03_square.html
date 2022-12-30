@@ -1,9 +1,13 @@
+<header>
+  <a href="javascript-and-HTML.html">< Back</a>
+  <a href="../index.html">Home</a>
+</header>
+
 <canvas width="600" height="400"></canvas>
 
 <script>
-
-  var display = document.querySelector('canvas');
-  var brush = display.getContext('2d')
+  var display = document.querySelector("canvas");
+  var brush = display.getContext("2d");
 
   function drawsSquare(xa, ya, xc, yc, color) {
     brush.fillStyle = color;
@@ -12,7 +16,7 @@
     brush.lineTo(xa, yc);
     brush.lineTo(xc, yc);
     brush.fill();
-    brush.fillStyle = 'white';
+    brush.fillStyle = "white";
     brush.beginPath();
     brush.moveTo((6 * xa + xc) / 7, (9 * ya + 5 * yc) / 14);
     brush.lineTo((6 * xa + xc) / 7, (ya + 6 * yc) / 7);
@@ -20,6 +24,5 @@
     brush.fill();
   }
 
-  drawsSquare(50, 50, 400, 400, 'black');
-
+  drawsSquare(50, 50, 400, 400, "black");
 </script>
