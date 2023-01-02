@@ -1,7 +1,11 @@
-<meta charset="UTF-8">
+<header>
+  <a href="../javascript-and-HTML-1.html">< Back</a>
+  <a href="../../index.html">Home</a>
+</header>
+
+<meta charset="UTF-8" />
 
 <script>
-
   function skipLine() {
     document.write("<br>");
   }
@@ -19,14 +23,13 @@
 
   var num = 1;
   var totalAge = 0;
-  while(num <= relativesQuantity) {
+  while (num <= relativesQuantity) {
     var age = parseInt(prompt("Enter the family member's age."));
     totalAge += age;
     num++;
   }
 
-  var averageAges = totalAge/relativesQuantity;
+  var averageAges = totalAge / relativesQuantity;
   show("The average age of family members is " + averageAges + ".");
   show("END");
-
 </script>

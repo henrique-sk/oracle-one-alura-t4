@@ -1,7 +1,11 @@
-<meta charset="UTF-8">
+<header>
+  <a href="../javascript-and-HTML-1.html">< Back</a>
+  <a href="../../index.html">Home</a>
+</header>
+
+<meta charset="UTF-8" />
 
 <script>
-
   function skipLine() {
     document.write("<br>");
   }
@@ -15,10 +19,13 @@
     skipLine();
   }
 
+  var number = parseInt(
+    prompt("Do you want to know the multiplication table of which number?")
+  );
+
   for (var i = 1; i <= 10; i++) {
-    show(7 * i);
+    show(i + " x " + number + " = " + number * i);
   }
 
   show("END");
-
 </script>

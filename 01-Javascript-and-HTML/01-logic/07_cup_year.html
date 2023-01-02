@@ -1,7 +1,11 @@
-<meta charset="UTF-8">
+<header>
+  <a href="../javascript-and-HTML-1.html">< Back</a>
+  <a href="../../index.html">Home</a>
+</header>
+
+<meta charset="UTF-8" />
 
 <script>
-
   function skipLine() {
     document.write("<br>");
   }
@@ -18,11 +22,10 @@
   var limit = parseInt(prompt("Enter the limit year."));
   var cupYear = 1930;
 
-  while(cupYear <= limit) {
+  while (cupYear <= limit) {
     show("There was a cup in " + cupYear + ".");
     cupYear += 4;
   }
 
-  show("END")
-
+  show("END");
 </script>
