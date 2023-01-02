@@ -1,9 +1,5 @@
-/* body {
-  
-} */
-
 header {
-  background: #BBBBBB;
+  background: #bbbbbb;
 }
 
 .main-title {
@@ -36,24 +32,30 @@ nav a {
 }
 
 nav a:hover {
-  color: #C78C19;
+  color: #c78c19;
   text-decoration: underline;
 }
 
 #banner {
   width: 100%;
+  float: left;
+  clear: none;
 }
 
 .main {
-  background: #CCCCCC;
+  background: #cccccc;
   padding: 30px;
+  float: left;
+  clear: none;
 }
 
 .centered-title {
+  padding: 20px;
   text-align: center;
 }
 
 p {
+  padding: 0 0 20px;
   text-align: center;
 }
 
@@ -62,25 +64,50 @@ p {
 }
 
 em strong {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .items {
   font-style: italic;
 }
 
+#benefits {
+  align-self: right;
+  float: right;
+}
+
 .benefits {
-  background: #FFFFFF;
-  padding: 20px;
+  float: left;
+  background: #ffffff;
+  padding: 0 20px;
 }
 
 .benefits ul {
   display: inline-block;
+  font-size: 15px;
+  padding: 80px 0 0 80px;
   vertical-align: top;
   width: 20%;
   margin-right: 15%;
 }
 
+.benefits li {
+  padding: 15px;
+  font-size: large;
+}
+
 .benefits-image {
   width: 50%;
+}
+
+footer {
+  text-align: center;
+  background: url("img/bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
 }
