@@ -53,7 +53,17 @@ nav a:hover {
   border-radius: 10px;
 }
 
-.pro li:hover
+.products li:hover {
+  border-color: #C78C19;
+}
+
+.products li:active {
+  border-color: #088C19;
+}
+
+.products li:hover h2 {
+  font-size: 34px;  
+}
 
 .products h2 {
   font-size: 30px;
