@@ -27,13 +27,30 @@
     <main>
       <form action="">
         <label for="first-last-name">First and last name</label>
-        <input type="text" id="first-last-name" class="input-default" />
+        <input
+          type="text"
+          id="first-last-name"
+          class="input-default"
+          required
+        />
 
         <label for="email">E-mail</label>
-        <input type="email" id="email" class="input-default" />
+        <input
+          type="email"
+          id="email"
+          class="input-default"
+          required
+          placeholder="youremail@domain.com"
+        />
 
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" class="input-default" />
+        <input
+          type="tel"
+          id="phone"
+          class="input-default"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+        />
 
         <label for="message">Message</label>
         <textarea
@@ -42,6 +59,7 @@
           cols="70"
           rows="10"
           class="input-default"
+          required
         ></textarea>
 
         <div>
@@ -70,6 +88,7 @@
               name="contact"
               value="whatsapp"
               id="radio-whatsapp"
+              checked
             />Whatsapp</label
           >
         </div>
@@ -84,8 +103,8 @@
         </div>
 
         <label class="checkbox"
-          ><input type="checkbox" /> Would you like to receive our news via
-          email?</label
+          ><input type="checkbox" checked /> Would you like to receive our news
+          via email?</label
         >
 
         <input type="submit" value="Submit form" />
