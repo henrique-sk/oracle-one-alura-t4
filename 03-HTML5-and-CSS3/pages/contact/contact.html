@@ -28,10 +28,38 @@
       <form action="">
         <label for="">First and last name</label>
         <input type="text" id="first-last-name" />
+
         <label for="">E-mail</label>
         <input type="text" id="email" />
+
         <label for="">Phone</label>
         <input type="text" id="phone" />
+
+        <label for="message">Message</label>
+        <textarea name="" id="message" cols="70" rows="10"></textarea>
+
+        <div>
+          <p>How do you prefer to be contacted?</p>
+          <label for="radio-email">E-mail</label>
+          <input type="radio" name="contact" value="email" id="radio-email" />
+
+          <label for="radio-phone">Phone</label>
+          <input type="radio" name="contact" value="phone" id="radio-phone" />
+
+          <label for="radio-whatsapp">Whatsapp</label>
+          <input
+            type="radio"
+            name="contact"
+            value="whatsapp"
+            id="radio-whatsapp"
+          />
+        </div>
+
+        <label for=""
+          ><input type="checkbox" /> Would you like to receive our news via
+          email?</label
+        >
+
         <input type="submit" value="Submit form" />
       </form>
     </main>
