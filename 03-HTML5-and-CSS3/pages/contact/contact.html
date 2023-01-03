@@ -12,7 +12,7 @@
     <header>
       <div class="box">
         <h1>
-          <img src="../../img/logo.png" alt="" />
+          <img src="../../img/logo.png" alt="Alura's Barber Shop logo" />
         </h1>
         <nav>
           <ul>
@@ -27,13 +27,30 @@
     <main>
       <form action="">
         <label for="first-last-name">First and last name</label>
-        <input type="text" id="first-last-name" class="input-default" />
+        <input
+          type="text"
+          id="first-last-name"
+          class="input-default"
+          required
+        />
 
         <label for="email">E-mail</label>
-        <input type="email" id="email" class="input-default" />
+        <input
+          type="email"
+          id="email"
+          class="input-default"
+          required
+          placeholder="youremail@domain.com"
+        />
 
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" class="input-default" />
+        <input
+          type="tel"
+          id="phone"
+          class="input-default"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+        />
 
         <label for="message">Message</label>
         <textarea
@@ -42,10 +59,11 @@
           cols="70"
           rows="10"
           class="input-default"
+          required
         ></textarea>
 
-        <div>
-          <p>How do you prefer to be contacted?</p>
+        <fieldset>
+          <legend>How do you prefer to be contacted?</legend>
           <label for="radio-email"
             ><input
               type="radio"
@@ -70,30 +88,54 @@
               name="contact"
               value="whatsapp"
               id="radio-whatsapp"
+              checked
             />Whatsapp</label
           >
-        </div>
+        </fieldset>
 
-        <div>
-          <p>What time do you prefer to be attended?</p>
+        <fieldset>
+          <legend>What time do you prefer to be attended?</legend>
           <select name="" id="">
             <option value="">Morning</option>
             <option value="">Afternoon</option>
             <option value="">Evening</option>
           </select>
-        </div>
+        </fieldset>
 
         <label class="checkbox"
-          ><input type="checkbox" /> Would you like to receive our news via
-          email?</label
+          ><input type="checkbox" checked /> Would you like to receive our news
+          via email?</label
         >
 
-        <input type="submit" value="Submit form" />
+        <input type="submit" value="Submit form" class="send" />
       </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <footer>
-      <img src="../../img/logo-branco.png" alt="" />
+      <img src="../../img/logo-branco.png" alt="Alura's Barber Shop logo" />
       <p class="copyright">&copy; Copyright Alura's Barbershop - 2022</p>
     </footer>
   </body>
