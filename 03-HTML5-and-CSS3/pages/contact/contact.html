@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Alura's Barber Shop</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <h1>
+          <img src="../../img/logo.png" alt="" />
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../products/products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form action="">
+        <label for="first-last-name">First and last name</label>
+        <input type="text" id="first-last-name" class="input-default" />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="input-default" />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" class="input-default" />
+
+        <label for="message">Message</label>
+        <textarea
+          name=""
+          id="message"
+          cols="70"
+          rows="10"
+          class="input-default"
+        ></textarea>
+
+        <div>
+          <p>How do you prefer to be contacted?</p>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contact"
+              value="email"
+              id="radio-email"
+            />E-mail</label
+          >
+
+          <label for="radio-phone"
+            ><input
+              type="radio"
+              name="contact"
+              value="phone"
+              id="radio-phone"
+            />Phone</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contact"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />Whatsapp</label
+          >
+        </div>
+
+        <div>
+          <p>What time do you prefer to be attended?</p>
+          <select name="" id="">
+            <option value="">Morning</option>
+            <option value="">Afternoon</option>
+            <option value="">Evening</option>
+          </select>
+        </div>
+
+        <label class="checkbox"
+          ><input type="checkbox" /> Would you like to receive our news via
+          email?</label
+        >
+
+        <input type="submit" value="Submit form" />
+      </form>
+    </main>
+
+    <footer>
+      <img src="../../img/logo-branco.png" alt="" />
+      <p class="copyright">&copy; Copyright Alura's Barbershop - 2022</p>
+    </footer>
+  </body>
+</html>
