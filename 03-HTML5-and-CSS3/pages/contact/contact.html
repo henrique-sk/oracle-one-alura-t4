@@ -26,42 +26,61 @@
 
     <main>
       <form action="">
-        <label for="">First and last name</label>
-        <input type="text" id="first-last-name" />
+        <label for="first-last-name">First and last name</label>
+        <input type="text" id="first-last-name" class="input-default" />
 
-        <label for="">E-mail</label>
-        <input type="text" id="email" />
+        <label for="email">E-mail</label>
+        <input type="text" id="email" class="input-default" />
 
-        <label for="">Phone</label>
-        <input type="text" id="phone" />
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" class="input-default" />
 
         <label for="message">Message</label>
-        <textarea name="" id="message" cols="70" rows="10"></textarea>
+        <textarea
+          name=""
+          id="message"
+          cols="70"
+          rows="10"
+          class="input-default"
+        ></textarea>
 
         <div>
           <p>How do you prefer to be contacted?</p>
-          <label for="radio-email">E-mail</label>
-          <input type="radio" name="contact" value="email" id="radio-email" />
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contact"
+              value="email"
+              id="radio-email"
+            />E-mail</label
+          >
 
-          <label for="radio-phone">Phone</label>
-          <input type="radio" name="contact" value="phone" id="radio-phone" />
+          <label for="radio-phone"
+            ><input
+              type="radio"
+              name="contact"
+              value="phone"
+              id="radio-phone"
+            />Phone</label
+          >
 
-          <label for="radio-whatsapp">Whatsapp</label>
-          <input
-            type="radio"
-            name="contact"
-            value="whatsapp"
-            id="radio-whatsapp"
-          />
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contact"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />Whatsapp</label
+          >
         </div>
-
-        <label for=""
+          
+          <label class="checkbox"
           ><input type="checkbox" /> Would you like to receive our news via
           email?</label
-        >
-
-        <input type="submit" value="Submit form" />
-      </form>
+          >
+          
+          <input type="submit" value="Submit form" />
+        </form>
     </main>
 
     <footer>

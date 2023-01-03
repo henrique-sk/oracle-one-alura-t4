@@ -1,5 +1,5 @@
 header {
-  background: #BBBBBB;
+  background: #bbbbbb;
   padding: 20px 0;
 }
 
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #C78C19;
+  color: #c78c19;
   text-decoration: underline;
 }
 
@@ -55,15 +55,15 @@ nav a:hover {
 }
 
 .products li:hover {
-  border-color: #C78C19;
+  border-color: #c78c19;
 }
 
 .products li:active {
-  border-color: #088C19;
+  border-color: #088c19;
 }
 
 .products li:hover h2 {
-  font-size: 34px;  
+  font-size: 34px;
 }
 
 .products h2 {
@@ -88,7 +88,7 @@ footer {
 }
 
 .copyright {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 13px;
   margin: 20px 0 0;
 }
@@ -103,17 +103,19 @@ form {
 }
 
 form label,
-form input {
+form p {
   display: block;
-  margin: 0 0 10px;
-}
-
-form label {
-  margin: 20px 0 0;
+  margin: 10px 0;
   font-size: 20px;
 }
 
-form input {
+.input-default {
+  display: block;
+  margin: 0 0 20px;
   padding: 10px 25px;
   width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
 }
