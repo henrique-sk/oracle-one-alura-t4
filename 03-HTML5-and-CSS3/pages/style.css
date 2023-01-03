@@ -92,3 +92,27 @@ footer {
   font-size: 13px;
   margin: 20px 0 0;
 }
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form input {
+  display: block;
+  margin: 0 0 10px;
+}
+
+form label {
+  font-size: 20px;
+}
+
+form input {
+  padding: 10px 25px;
+  width: 50%;
+}
