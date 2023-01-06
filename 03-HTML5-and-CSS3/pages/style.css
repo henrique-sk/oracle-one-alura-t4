@@ -105,8 +105,8 @@ form {
 form label,
 form legend {
   display: block;
-  margin: 0 0 10px;
   font-size: 20px;
+  margin: 0 0 10px;
 }
 
 .input-default {
@@ -139,7 +139,8 @@ form legend {
   /* transform: scale(1.2); */
   /* transition: 1s transform; */
   /* transform: rotate(70deg); */
-  transform: rotate(360deg) scale(1.2); /* to execute both, they need to be in the same */
+  /* transform: rotate(360deg) scale(1.2); **to execute both, they need to be in the same */
+  transform: scale(1.2);
 }
 
 table {
@@ -157,3 +158,9 @@ th {
   border: 1px solid #000000;
   padding: 8px 15px;
 }
+
+/* home page css */
+.banner {
+  width: 100%;
+}
+
