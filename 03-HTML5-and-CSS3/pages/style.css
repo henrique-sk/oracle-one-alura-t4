@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   background: #bbbbbb;
   padding: 20px 0;
@@ -164,3 +168,31 @@ th {
   width: 100%;
 }
 
+.main-title {
+  text-align: center;
+  font-size: 2em; /* em s the proportional measurement for pixels (2 is double) */
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.main p {
+  margin: 0 0 1em;
+}
+
+.main strong {
+  font-weight: bold;
+}
+
+.main em {
+  font-style: italic;
+}
+
+.benefits-image {
+  width: 60%;
+}
+
+.utensils {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
