@@ -98,8 +98,7 @@ footer {
 }
 
 main {
-  width: 940px;
-  margin: 0 auto;
+  
 }
 
 form {
@@ -175,6 +174,13 @@ th {
   clear: left;
 }
 
+.main {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .main p {
   margin: 0 0 1em;
 }
@@ -195,6 +201,12 @@ th {
 
 .map {
   padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.map-content {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .map p {
@@ -204,6 +216,7 @@ th {
 
 .benefits {
   padding: 3em 0;
+  background: #888888;
 }
 
 .content-benefits {
