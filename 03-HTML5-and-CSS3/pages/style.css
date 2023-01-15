@@ -133,16 +133,11 @@ form legend {
   border: none;
   border-radius: 5px;
   transition: 1s all;
-  /* transition: 1s background; */
   cursor: pointer;
 }
 
 .send:hover {
   background: darkorange;
-  /* transform: scale(1.2); */
-  /* transition: 1s transform; */
-  /* transform: rotate(70deg); */
-  /* transform: rotate(360deg) scale(1.2); **to execute both, they need to be in the same */
   transform: scale(1.2);
 }
 
@@ -169,7 +164,7 @@ th {
 
 .main-title {
   text-align: center;
-  font-size: 2em; /* em s the proportional measurement for pixels (2 is double) */
+  font-size: 2em;
   margin: 0 0 1em;
   clear: left;
 }
@@ -238,8 +233,19 @@ th {
   font-weight: bold;
 }
 
+.items:before {
+  content: "★ ";
+}
+
 .image-benefits {
   width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.image-benefits:hover {
+  opacity: 0.8;
 }
 
 .video {
