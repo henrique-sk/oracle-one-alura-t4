@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
   background: #bbbbbb;
   padding: 20px 0;
@@ -93,11 +97,6 @@ footer {
   margin: 20px 0 0;
 }
 
-main {
-  width: 940px;
-  margin: 0 auto;
-}
-
 form {
   margin: 40px 0;
 }
@@ -130,16 +129,11 @@ form legend {
   border: none;
   border-radius: 5px;
   transition: 1s all;
-  /* transition: 1s background; */
   cursor: pointer;
 }
 
 .send:hover {
   background: darkorange;
-  /* transform: scale(1.2); */
-  /* transition: 1s transform; */
-  /* transform: rotate(70deg); */
-  /* transform: rotate(360deg) scale(1.2); **to execute both, they need to be in the same */
   transform: scale(1.2);
 }
 
@@ -164,3 +158,111 @@ th {
   width: 100%;
 }
 
+.main-title {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.main {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main p {
+  margin: 0 0 1em;
+}
+
+.main strong {
+  font-weight: bold;
+}
+
+.main em {
+  font-style: italic;
+}
+
+.utensils {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.map {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.map-content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.map p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.benefits {
+  padding: 3em 0;
+  background: #888888;
+}
+
+.content-benefits {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.list-benefits {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items {
+  line-height: 1.5em;
+}
+
+.items:first-child {
+  font-weight: bold;
+}
+
+.items:before {
+  content: "★ ";
+}
+
+.image-benefits {
+  width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.image-benefits:hover {
+  opacity: 0.8;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+  .box, .main, .content-benefits, .map-content, .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .list-benefits, .image-benefits {
+    width: 100%;
+  }
+}
