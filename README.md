@@ -8,7 +8,7 @@ I am documenting in this repository all the material developed during the classe
 
 ![100%](https://progress-bar.dev/100) Personal Development 
 
-![71%](https://progress-bar.dev/71) Beginner in Programming
+![100%](https://progress-bar.dev/71) Beginner in Programming
 
 ## Technologies used
 
