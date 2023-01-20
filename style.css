@@ -1,0 +1,62 @@
+body, input {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+.main {
+  background: rgb(95, 88, 88);
+}
+
+header, main {
+  text-align: center;
+}
+
+h1 {
+  font-size: x-large;
+  padding: 10px;
+
+}
+
+header li {
+  vertical-align: middle;
+}
+
+input {
+  width: 105%;
+  padding: 15px 0;
+  margin: 0 0 20px;
+  background: rgb(114, 107, 107);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+input:hover {
+  background: rgb(133, 127, 127);
+  transform: scale(1.2);
+}
+
+ul {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 20px 0;  
+}
+
+img {
+  width: 100px;
+  padding: 0 10px;
+}
+
+img + img {
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #ffffff;
+}
