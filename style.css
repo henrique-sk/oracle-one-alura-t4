@@ -3,12 +3,14 @@ body, input {
 }
 
 header {
-  background: #bbbbbb;
+  background: #FFAC00;
+  
   padding: 20px 0;
 }
 
-.main {
-  background: rgb(95, 88, 88);
+.menu {
+  /* background: rgb(95, 88, 88); */
+  background: #e69900;
 }
 
 header, main {
@@ -16,8 +18,9 @@ header, main {
 }
 
 h1 {
-  font-size: x-large;
+  font-size: 30px;
   padding: 10px;
+  color: #ffffff;
 
 }
 
@@ -29,19 +32,20 @@ input {
   width: 105%;
   padding: 15px 0;
   margin: 0 0 20px;
-  background: rgb(114, 107, 107);
+  background: #bd7e00;
   color: white;
   font-weight: bold;
   font-size: 18px;
   border: none;
   border-radius: 25px;
-  transition: 1s all;
+  transition: 0.4s all;
   cursor: pointer;
 }
 
 input:hover {
-  background: rgb(133, 127, 127);
-  transform: scale(1.2);
+  background: #a76f00;
+  /* opacity: 0.5; */
+  transform: scale(1.1);
 }
 
 ul {
@@ -59,4 +63,18 @@ img + img {
   border-width: 0 0 0 1px;
   border-style: solid;
   border-color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: #FFAC00;
+  /* background: url("../img/bg.jpg"); */
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
 }
