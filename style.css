@@ -5,18 +5,21 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-body, input {
+body,
+input {
   font-family: "Montserrat", sans-serif;
 }
 
 header {
-  background: #FFAC00; 
+  background: #ffac00;
   padding: 20px 0;
   vertical-align: middle;
 }
 
-header, main, footer {
-  text-align: center;  
+header,
+main,
+footer {
+  text-align: center;
 }
 
 .box {
@@ -44,7 +47,7 @@ h1 {
 }
 
 .description {
-  background: linear-gradient(#FFAC00, #e69900);
+  background: linear-gradient(#ffac00, #e69900);
 }
 
 p {
@@ -63,9 +66,13 @@ ul {
   margin: 0 auto;
 }
 
-input {
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
   width: 100%;
-  padding: 15px 24px;
+  padding: 15px 10px;
   margin: 10px 0;
   background: #bd7e00;
   color: white;
@@ -77,14 +84,14 @@ input {
   cursor: pointer;
 }
 
-input:hover {
+a.button:hover {
   background: #a76f00;
   transform: scale(1.1);
 }
 
 footer {
   color: #ffffff;
-  background-color: #FFAC00;
+  background-color: #ffac00;
   padding: 40px 0;
 }
 
