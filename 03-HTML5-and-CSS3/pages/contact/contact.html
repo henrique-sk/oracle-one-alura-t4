@@ -29,113 +29,115 @@
     </header>
 
     <main>
-      <form action="">
-        <label for="first-last-name">First and last name</label>
-        <input
-          type="text"
-          id="first-last-name"
-          class="input-default"
-          required
-        />
+      <section class="main">
+        <form action="">
+          <label for="first-last-name">First and last name</label>
+          <input
+            type="text"
+            id="first-last-name"
+            class="input-default"
+            required
+          />
 
-        <label for="email">E-mail</label>
-        <input
-          type="email"
-          id="email"
-          class="input-default"
-          required
-          placeholder="youremail@domain.com"
-        />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            class="input-default"
+            required
+            placeholder="youremail@domain.com"
+          />
 
-        <label for="phone">Phone</label>
-        <input
-          type="tel"
-          id="phone"
-          class="input-default"
-          required
-          placeholder="(xx) xxxxx-xxxx"
-        />
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            class="input-default"
+            required
+            placeholder="(xx) xxxxx-xxxx"
+          />
 
-        <label for="message">Message</label>
-        <textarea
-          name=""
-          id="message"
-          cols="70"
-          rows="10"
-          class="input-default"
-          required
-        ></textarea>
+          <label for="message">Message</label>
+          <textarea
+            name=""
+            id="message"
+            cols="70"
+            rows="10"
+            class="input-default"
+            required
+          ></textarea>
 
-        <fieldset>
-          <legend>How do you prefer to be contacted?</legend>
-          <label for="radio-email"
-            ><input
-              type="radio"
-              name="contact"
-              value="email"
-              id="radio-email"
-            />E-mail</label
+          <fieldset>
+            <legend>How do you prefer to be contacted?</legend>
+            <label for="radio-email"
+              ><input
+                type="radio"
+                name="contact"
+                value="email"
+                id="radio-email"
+              />E-mail</label
+            >
+
+            <label for="radio-phone"
+              ><input
+                type="radio"
+                name="contact"
+                value="phone"
+                id="radio-phone"
+              />Phone</label
+            >
+
+            <label for="radio-whatsapp"
+              ><input
+                type="radio"
+                name="contact"
+                value="whatsapp"
+                id="radio-whatsapp"
+                checked
+              />Whatsapp</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>What time do you prefer to be attended?</legend>
+            <select name="" id="">
+              <option value="">Morning</option>
+              <option value="">Afternoon</option>
+              <option value="">Evening</option>
+            </select>
+          </fieldset>
+
+          <label class="checkbox"
+            ><input type="checkbox" checked /> Would you like to receive our
+            news via email?</label
           >
 
-          <label for="radio-phone"
-            ><input
-              type="radio"
-              name="contact"
-              value="phone"
-              id="radio-phone"
-            />Phone</label
-          >
+          <input type="submit" value="Submit form" class="send" />
+        </form>
 
-          <label for="radio-whatsapp"
-            ><input
-              type="radio"
-              name="contact"
-              value="whatsapp"
-              id="radio-whatsapp"
-              checked
-            />Whatsapp</label
-          >
-        </fieldset>
-
-        <fieldset>
-          <legend>What time do you prefer to be attended?</legend>
-          <select name="" id="">
-            <option value="">Morning</option>
-            <option value="">Afternoon</option>
-            <option value="">Evening</option>
-          </select>
-        </fieldset>
-
-        <label class="checkbox"
-          ><input type="checkbox" checked /> Would you like to receive our news
-          via email?</label
-        >
-
-        <input type="submit" value="Submit form" class="send" />
-      </form>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday</td>
-            <td>8h ~ 20h</td>
-          </tr>
-          <tr>
-            <td>Wednesday</td>
-            <td>8h ~ 20h</td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td>8h ~ 20h</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>8h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <footer>

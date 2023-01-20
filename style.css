@@ -1,0 +1,95 @@
+body {
+  background: #e69900;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+body, input {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: #FFAC00; 
+  padding: 20px 0;
+  vertical-align: middle;
+}
+
+header, main, footer {
+  text-align: center;  
+}
+
+.box {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+img {
+  width: 100px;
+  padding: 0 10px;
+}
+
+img + img {
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 10px 10px 0;
+  color: #ffffff;
+}
+
+.description {
+  background: linear-gradient(#FFAC00, #e69900);
+}
+
+p {
+  line-height: normal;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.menu {
+  background: #e69900;
+}
+
+ul {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 15px 24px;
+  margin: 10px 0;
+  background: #bd7e00;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+input:hover {
+  background: #a76f00;
+  transform: scale(1.1);
+}
+
+footer {
+  color: #ffffff;
+  background-color: #FFAC00;
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
